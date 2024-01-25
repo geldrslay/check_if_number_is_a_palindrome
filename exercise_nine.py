@@ -11,5 +11,15 @@ def palindrome (given_number):
     while given_number > 0:
         digit = given_number % 10
         reverse_number = digit + (reverse_number *10) 
-       given_number = given_number // 10
+        given_number = given_number // 10
     
+    # Check if number is a palindrome or not. 
+    if original_number == reverse_number:
+        print ("Is this a palindrome? Yes.")
+    else: 
+        print ("Is this a palindrome? No.")
+
+# Provide the given numbers.
+
+palindrome (121)
+palindrome (125)
